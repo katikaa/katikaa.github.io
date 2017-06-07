@@ -3,45 +3,40 @@ html, body, .container
     height: 100%; 
     min-height: 100%;
 }
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}   
 
-.first {
-    float: left;
-    width: 50%;
-    height: 33%;
-    background-color: #96ceb4;
+#first {
+  
+    background-color: #96ceb4;   
 }
 
-.second{
-    float: left;
-    width: 50%;
-    height: 33%;
+#second{
     background-color: #ffeead;
 }
 
 
-.third{
-    float: right;
-    width: 50%;
-    height: 33%;
+#third{
+   
     background-color: #ff6f69;
 }
 
-.fourth {
-    float: right;
-    width: 50%;
-    height: 33%;
+#fourth {
+   
     background-color: #5b9aa0;
 }
-.fifth{
-    float: left;
-    width: 50%;
-    height: 33%;
+#fifth{
+  
     background-color: #ffeead;
 }
 
-.last{
-    float: right;
-    width: 50%;
-    height: 33%;
+#last{
+  
     background-color: #f2ae72;
 }
