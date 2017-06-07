@@ -9,29 +9,36 @@
   }
 #first {
  
-    background-color: #96ceb4;   
+    background-color: #f52549;   
 }
 
 #second{
-    background-color: #ffeead;
+    background-color: #9bc01c;
 }
 
 
 #third{
    
-    background-color: #ff6f69;
+    background-color: #ffd64d;
 }
 
 #fourth {
    
-    background-color: #5b9aa0;
+    background-color: #fa6775;
 }
 #fifth{
   
-    background-color: #ffeead;
+    background-color: #4897d8;
 }
 
-#last{
+#sixth{
   
-    background-color: #f2ae72;
+    background-color: #fa6e59;
+}
+
+h2 {
+    font-family: arial;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
 }
