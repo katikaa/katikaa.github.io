@@ -6,11 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="city" id="first">About</div>
-  <div class="city" id="third">Work</div>
-  <div class="city"id="second">Skills</div>
-  <div class="city" id="fourth">Education</div>
-  <div class="city" id="fifth">Work</div>
-  <div class="city" id="last">Portfolio</div>
+  <div class="city" id="first" onclick="myFunction1()"><h2 id="About">About</h2></div>
+  <div class="city" id="second" onclick="myFunction2()"><h2 id="Work">Work</h2></div>
+  <div class="city"id="third" onclick="myFunction3()"><h2 id="Education">Education</h2></div>
+  <div class="city" id="fourth" onclick="myFunction4()"><h2 id="Toolbox">Toolbox</h2></div>
+  <div class="city" id="fifth" onclick="myFunction5()"><h2 id="Portfolio">Portfolio</h2></div>
+  <div class="city" id="sixth" onclick="myFunction6()"><h2 id="Connect">Connect</h2></div>
+ <script>
+function myFunction1() {
+    document.getElementById("About").innerHTML = " A web ";
+}
+
+function myFunction2() {
+    document.getElementById("Work").innerHTML = "Business";
+}
+function myFunction3() {
+    document.getElementById("Education").innerHTML = "Analyst";
+}
+function myFunction4() {
+    document.getElementById("Toolbox").innerHTML = "who loves";
+}
+function myFunction5() {
+    document.getElementById("Portfolio").innerHTML = "Star Wars";
+}
+function myFunction6() {
+    document.getElementById("Connect").innerHTML = "& Instagram";
+}
+</script>
 </body>
 </html>
