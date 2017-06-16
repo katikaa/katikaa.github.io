@@ -47,12 +47,3 @@ p,li {
     color: #727878;
     text-align: left;
 }
-
-#portfoliodiv {
-    float: left;
-    margin: 5px;
-    padding: 15px;
-    height: 150px;
-    background-color: #22A39F;
-    opacity: 0.7;
-}
