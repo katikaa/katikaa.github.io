@@ -41,9 +41,10 @@ h2 {
     text-align: center;
 }
 
-p,li {
-    font-size: 21px;
-    font-family: garamond
-    color: #727878;
+
+#AboutDIV, #WorkDIV, #EducationDIV, #ToolboxDIV, #ConnectDIV {
+    font-family: arial;
+    font-size: 20px;
     text-align: left;
+    display: none;
 }
