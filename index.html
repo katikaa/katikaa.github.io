@@ -16,7 +16,14 @@ I help define problems and solutions that deliver value. Which is a fancy way of
   <div class="city" onclick="switchVisible2()">
     <h2 id="Work">Work</h2>
     <div id="WorkDIV">
-<ul><li>2017-present: Business Analyst, BBC News </li> <li>2015-2017: Product Owner, Transport for London </li> <li>2011-2015: Senior Software Engineer, Accenture </li><li> 2009-2010: Software Developer, European Commission</li></ul>
+I work as a business analyst in BBC News based in London. 
+</div>
+  </div>
+  </div></div>
+  <div class="city" onclick="switchVisible6()">
+    <h2 id="PastAdventures">Past Adventures</h2>
+    <div id="PastAdventuresDIV">
+<ul><li>2015-2017: Product Owner, Transport for London </li> <li>2011-2015: Senior Software Engineer, Accenture </li><li> 2009-2010: Software Developer, European Commission</li></ul>
 </div>
   </div>
   <div class="city" onclick="switchVisible3()">
@@ -115,6 +122,20 @@ function switchVisible5() {
                 else {
                     document.getElementById('Connect').style.display = 'none';
                     document.getElementById('ConnectDIV').style.display = 'block';
+                }
+            }
+}
+   
+function switchVisible6() {
+            if (document.getElementById('PastAdventures')) {
+
+                if (document.getElementById('PastAdventures').style.display == 'none') {
+                    document.getElementById('PastAdventures').style.display = 'block';
+                    document.getElementById('PastAdventuresDIV').style.display = 'none';
+                }
+                else {
+                    document.getElementById('PastAdventures').style.display = 'none';
+                    document.getElementById('PastAdventuresDIV').style.display = 'block';
                 }
             }
 }
