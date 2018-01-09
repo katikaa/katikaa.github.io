@@ -2,7 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
-  <title>Afroditi Katika</title>
+  <title>Afroditi Katika - Hello!</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -14,16 +15,18 @@
 I help define problems and solutions that deliver value. Which is a fancy way of saying I ask lots of questions. <br> <br> I love lists, data and a good user story.<br> <br> Born in Greece, based in London
 </div></div>
   <div class="city" onclick="switchVisible2()">
-    <h2 id="Work">Work</h2>
+    <h2 id="Work">Current Adventures</h2>
     <div id="WorkDIV">
-I work as a business analyst in BBC News based in London. 
+In January 2018 I will be celebrating a year with <b>BBC News</b> where I work as a business analyst in the product team. <br><br>
+Favourite canteen food: scrambled eggs and mushrooms for breakfast. <br><br>
+Most memorable moment so far: seeing Gwen Stefani in One Show.
 </div>
   </div>
   </div></div>
   <div class="city" onclick="switchVisible6()">
     <h2 id="PastAdventures">Past Adventures</h2>
     <div id="PastAdventuresDIV">
-<ul><li>2015-2017: Product Owner, Transport for London </li> <li>2011-2015: Senior Software Engineer, Accenture </li><li> 2009-2010: Software Developer, European Commission</li></ul>
+<ul><li>2015-2017: Product Owner, <b>Transport for London</b> </li> <li>2011-2015: Senior Software Engineer, <b>Accenture</b> </li><li> 2009-2010: Software Developer, <b>European Commission</b></li></ul>
 </div>
   </div>
   <div class="city" onclick="switchVisible3()">
@@ -35,7 +38,7 @@ I work as a business analyst in BBC News based in London.
   <div class="city" onclick="switchVisible4()">
     <h2 id="Toolbox">Toolbox</h2>
     <div id="ToolboxDIV">
-<ul><li>HTML,CSS,Javascript </li> <li>JIRA, Github</li> <li>MS Suite (Excel, Powerpoint, Visio) </li><li>Google Analytics, Adobe Analytics</li></ul>
+<ul><li>HTML, CSS, Javascript </li> <li>JIRA, Github</li> <li>MS Suite (Excel, Powerpoint, Visio) </li><li>Google Analytics, Adobe Analytics</li></ul>
 </div>
   </div>
   <div class="city" onclick="switchVisible5()">
@@ -47,20 +50,15 @@ LinkedIn: linkedin.com/in/afroditikatika/ </br></br>Twitter: @foustoon </br></br
   <div class="city">
     <h2>Portfolio</h2>
     <FORM>
+      <center><input type="password" name="password"></center>
       <input type="button" value="Click to see my portfolio" onClick="passWord()">
     </FORM> 
   </div>
  
  <script>
 
-function myFunction5() {
-    document.getElementById("Connect").innerHTML = "<p>LinkedIn: linkedin.com/in/afroditikatika/ </br></br>Twitter: @foustoon </br></br>Blog: Graphic'o Toast [graphicotoast.wordpress.com]</p>";
-}
-
-
 function switchVisible1() {
             if (document.getElementById('About')) {
-
                 if (document.getElementById('About').style.display == 'none') {
                     document.getElementById('About').style.display = 'block';
                     document.getElementById('AboutDIV').style.display = 'none';
@@ -73,7 +71,6 @@ function switchVisible1() {
 }
 function switchVisible2() {
             if (document.getElementById('Work')) {
-
                 if (document.getElementById('Work').style.display == 'none') {
                     document.getElementById('Work').style.display = 'block';
                     document.getElementById('WorkDIV').style.display = 'none';
@@ -86,7 +83,6 @@ function switchVisible2() {
 }
 function switchVisible3() {
             if (document.getElementById('Education')) {
-
                 if (document.getElementById('Education').style.display == 'none') {
                     document.getElementById('Education').style.display = 'block';
                     document.getElementById('EducationDIV').style.display = 'none';
@@ -97,10 +93,8 @@ function switchVisible3() {
                 }
             }
 }
-
 function switchVisible4() {
             if (document.getElementById('Toolbox')) {
-
                 if (document.getElementById('Toolbox').style.display == 'none') {
                     document.getElementById('Toolbox').style.display = 'block';
                     document.getElementById('ToolboxDIV').style.display = 'none';
@@ -111,10 +105,8 @@ function switchVisible4() {
                 }
             }
 }
-
 function switchVisible5() {
             if (document.getElementById('Connect')) {
-
                 if (document.getElementById('Connect').style.display == 'none') {
                     document.getElementById('Connect').style.display = 'block';
                     document.getElementById('ConnectDIV').style.display = 'none';
@@ -128,7 +120,6 @@ function switchVisible5() {
    
 function switchVisible6() {
             if (document.getElementById('PastAdventures')) {
-
                 if (document.getElementById('PastAdventures').style.display == 'none') {
                     document.getElementById('PastAdventures').style.display = 'block';
                     document.getElementById('PastAdventuresDIV').style.display = 'none';
@@ -142,23 +133,23 @@ function switchVisible6() {
 
 function passWord() {
 var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
+var pass1 = prompt('Please Enter Your Password','');
 while (testV < 3) {
 if (!pass1) 
 history.go(-1);
-if (pass1.toLowerCase() == "afroditi") {
-alert('You Got it Right!');
+if (pass1.toLowerCase() == "foustoon") {
 window.open('https://katikaa.github.io/portfolio.html');
 break;
 } 
 testV+=1;
 var pass1 = 
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+prompt('This does not seem correct. Do you want to type this again?','');
 }
 if (pass1.toLowerCase()!="password" & testV ==3) 
 history.go(-1);
 return " ";
 } 
+
 </script>
 </body>
 </html>
