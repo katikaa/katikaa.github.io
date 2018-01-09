@@ -47,11 +47,12 @@ Most memorable moment so far: seeing Gwen Stefani in One Show.
 LinkedIn: linkedin.com/in/afroditikatika/ </br></br>Twitter: @foustoon </br></br>Blog: Graphic'o Toast [graphicotoast.wordpress.com]
 </div>
   </div>
-  <div class="city">
+  <div class="dweller">
     <h2>Portfolio</h2>
-    <FORM>
-      <center><input type="password" name="password"></center>
-      <input type="button" value="Click to see my portfolio" onClick="passWord()">
+    <p>(this is a github site - so...)</p>
+    <FORM method="POST" >
+      <center><input type="password" id="password"/>
+        <input type="button" onClick="goForit()" value="Submit"/>
     </FORM> 
   </div>
  
@@ -131,24 +132,16 @@ function switchVisible6() {
             }
 }
 
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password','');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "foustoon") {
-window.open('https://katikaa.github.io/portfolio.html');
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('This does not seem correct. Do you want to type this again?','');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
+function goForit(){
+      var passwd;
+      passwd = document.getElementById('password').value;
+      if(passwd.toLowerCase()=="foustoon"){
+      window.open('https://katikaa.github.io/portfolio.html')
+      }
+      else{
+      alert('This does not seem correct. Do you want to type this again?');
+      }
+    }
 
 </script>
 </body>
